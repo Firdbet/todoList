@@ -116,6 +116,6 @@ app.post("/delete", function(req, res) {
 
 });
 
-app.listen(3000, function(){
+app.listen(process.env.POST || 3000, function(){
     console.log("Server is on port 3000.");
 });
